@@ -6,11 +6,29 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-   <title>Moj etch a sketch</title>
+   <title>Etch a sketch</title>
+   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
 </head>
 <body>
    <h1 class="title">Etch a sketch</h1>
-
+   <div class="buttons">
+      <div class="buttons-center">
+         <button class="reset-btn btn">Reset</button>
+         <button class="default-btn btn">Default</button>
+         <button class="random-btn btn">Random Color</button>
+      </div>
+      <div class="buttons-center">
+         <div class="label-container">
+            <label for="color-picker" class="">Pick a color</label>
+         <input class="btn" type="color" name="color-picker" id="color-picker" value="#cc75d1"">
+         </div>
+         <div class="label-container">
+            <input type="range" min="2" max="40" value="16" name="slider" id="slider">
+         <label for="slider" class="grid-size-value">16</label>
+         </div>
+      </div>
+   </div>
+   <div class="container"></div>
    <script src="/script.js"></script>
 </body>
 </html>
